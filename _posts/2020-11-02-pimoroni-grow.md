@@ -2,6 +2,7 @@
 layout: post
 author: Dougie
 category: raspi
+published: false
 ---
 
 I like Pimoroni's products, they're generally well made with reasonable documentation. The first run of their new [Grow](https://learn.pimoroni.com/tutorial/hel/assembling-grow) Hat was discounted because of a slight flaw - the screens don't dim.
