@@ -1,8 +1,341 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-03-30T13:08:56+01:00</updated><id>/feed.xml</id><title type="html">Midlife Geek</title><subtitle>I'm a middle-aged computing enthusiast and runner, this is my GitHub Page!</subtitle><entry><title type="html">First steps with Jekyll!</title><link href="/jekyll/update/2020/03/29/trying-jekyll.html" rel="alternate" type="text/html" title="First steps with Jekyll!" /><published>2020-03-29T19:27:52+01:00</published><updated>2020-03-29T19:27:52+01:00</updated><id>/jekyll/update/2020/03/29/trying-jekyll</id><content type="html" xml:base="/jekyll/update/2020/03/29/trying-jekyll.html">&lt;p&gt;Never used Ruby at all but after trying Pelican and realising that I’d found no need for any Python
-I thought I’d give &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; a go.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-06-05T15:27:43+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dougie Richardson</title><subtitle>Opensource software enthusiast, avionics technician and runner.</subtitle><entry><title type="html">Low cost Mouse Jiggler using SAMD21 or Pico</title><link href="http://localhost:4000/raspi/2021/06/05/jiggler.html" rel="alternate" type="text/html" title="Low cost Mouse Jiggler using SAMD21 or Pico" /><published>2021-06-05T00:00:00+01:00</published><updated>2021-06-05T00:00:00+01:00</updated><id>http://localhost:4000/raspi/2021/06/05/jiggler</id><content type="html" xml:base="http://localhost:4000/raspi/2021/06/05/jiggler.html">&lt;h1 id=&quot;low-cost-mouse-jiggler-using-samd21-or-pico&quot;&gt;Low cost Mouse Jiggler using SAMD21 or Pico&lt;/h1&gt;
 
-&lt;p&gt;I like the idea of a static site generator for several reasons - security, simplicity and the potential to tie in with version control. Security is the biggest of these, using Wordpress for several years, there’s often high profile issues. I’ve also found Wordpress to be getting a bit bloated as it matures and the new block editor is terrible.&lt;/p&gt;
+&lt;p&gt;Nothing complicated, moves the mouse random distances at set intervals and back to where it was. Allows me to stop my work laptop going to sleep when I’m AFK without Big Brother knowing. Requires CircuitPython &lt;a href=&quot;https://circuitpython.org/board/neopixel_trinkey_m0/&quot;&gt;M0&lt;/a&gt;/&lt;a href=&quot;https://circuitpython.org/board/raspberry_pi_pico/&quot;&gt;Pico&lt;/a&gt; higher than version 7.0.0 (support for code.py rather than rebuilding CircuitPython).&lt;/p&gt;
 
-&lt;p&gt;In tandem with this is a burdgening adoration for Markdown, which both Pelican and Jekyll support.&lt;/p&gt;
+&lt;p&gt;I used an &lt;a href=&quot;https://shop.pimoroni.com/products/adafruit-neo-trinkey-samd21-usb-key-with-4-neopixels&quot;&gt;Adafruit Neo Trinkey&lt;/a&gt; and a &lt;a href=&quot;https://shop.pimoroni.com/products/raspberry-pi-pico?variant=32402092294227&quot;&gt;Raspberry Pico&lt;/a&gt;. Neither are expensive, I paid £6.30 and £3.60 respectively. Trinkey is a bit flashier, doesn’t need a cable, fits on a keyring and has the ability to bypass &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;boot.py&lt;/code&gt; bu pressing both capacitive keys.&lt;/p&gt;
 
-&lt;p&gt;Following the &lt;a href=&quot;https://jekyllrb.com/docs/step-by-step/01-setup/&quot;&gt;step by step tutorial&lt;/a&gt; took less than an hour, which is about as much as of attention span as I have now and it’s a credit to the writer that I only drifted off on the last page.&lt;/p&gt;</content><author><name></name></author><summary type="html">Never used Ruby at all but after trying Pelican and realising that I’d found no need for any Python I thought I’d give Jekyll a go.</summary></entry></feed>
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;p&gt;CircuitPython code on my &lt;a href=&quot;https://github.com/DougieWougie/jiggler&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
+&lt;p&gt;You’ll need to install &lt;a href=&quot;https://learn.adafruit.com/adafruit-neo-trinkey&quot;&gt;CircuitPython&lt;/a&gt; version 7.0.0 or higher first, otherwise you won’t be able to make the device identify as USB HID.&lt;/p&gt;
+
+&lt;h2 id=&quot;warning&quot;&gt;Warning&lt;/h2&gt;
+&lt;p&gt;The Pico hasn’t got an input so we can’t follow Adafruit’s &lt;a href=&quot;https://learn.adafruit.com/customizing-usb-devices-in-circuitpython/circuitpy-midi-serial#dont-lock-yourself-out-3096636-14]&quot;&gt;advice&lt;/a&gt; from Adafruit and could lock you out.&lt;/p&gt;</content><author><name>Dougie</name></author><category term="raspi" /><category term="raspi" /><category term="electronics" /><category term="pimoroni" /><summary type="html">Low cost Mouse Jiggler using SAMD21 or Pico</summary></entry><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/education/2020/04/02/machine-learning.html" rel="alternate" type="text/html" title="Machine Learning" /><published>2020-04-02T00:00:00+01:00</published><updated>2020-04-02T00:00:00+01:00</updated><id>http://localhost:4000/education/2020/04/02/machine-learning</id><content type="html" xml:base="http://localhost:4000/education/2020/04/02/machine-learning.html">&lt;p&gt;Coronavirus has seen many of us stuck indoors for potentially months so I’ve been taking advantage of the time trying out a course in Machine Learning.&lt;/p&gt;
+
+&lt;p&gt;I just finished reading &lt;a href=&quot;http://www.hannahfry.co.uk/helloworld&quot;&gt;Hannah Fry’s Hello World&lt;/a&gt; and realised that although machine learning affects a vast amount of my life, I don’t know a great deal about how it is actually implemented. Combined with my employer’s desire for me to take more courses, I enrolled in a couple with Udemy.
+&lt;!-- more --&gt;
+The specifically titled &lt;a href=&quot;https://www.udemy.com/course/machinelearning/&quot;&gt;Machine Learning A-Z: Hands-on Python &amp;amp; R in Data Science&lt;/a&gt; paired with &lt;a href=&quot;https://www.udemy.com/course/deeplearning&quot;&gt;Deep Learning A-Z: Hands-on Artificial Neural Networks&lt;/a&gt; for a mere £28.98 seems reasonable so off we go.&lt;/p&gt;
+
+&lt;p&gt;The course seems logically structured and well laid out - today I spent about 3 hours on it covering data pre-processing.&lt;/p&gt;
+
+&lt;p&gt;One thing about Python that I find frustrating is that the language and it’s many libraries change frequently, often with little backwards compatibility. This was evident when using the &lt;a href=&quot;https://scikit-learn.org/stable/&quot;&gt;Sci-kit Learn library&lt;/a&gt; after a number of changes including a deprecated method. In fairness this didn’t take me long to Google and fix but nonetheless it is a concern. The course leads are aware of this, having changed the downloads but not updated the course videos. Engineering can often see otherwise perfectly suitable solutions become difficult to maintain due to obsolescence and this is a similar problem in software.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/scikit-learn-logo-notext.png&quot; alt=&quot;Sci-kit learn&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The course also has a couple of “draw the rest of the owl” moments. Starting multiple linear regression, there is a slide that says you need to know what a p-value is and links to two actually quite unhelpful sites. Fortunately Sal Khan to the rescue and I was up to speed. There’s another on one slide that mentions 6 occasions that regression is unsuitable but doesn’t explain any of them.&lt;/p&gt;</content><author><name>Dougie</name></author><category term="education" /><summary type="html">Coronavirus has seen many of us stuck indoors for potentially months so I’ve been taking advantage of the time trying out a course in Machine Learning. I just finished reading Hannah Fry’s Hello World and realised that although machine learning affects a vast amount of my life, I don’t know a great deal about how it is actually implemented. Combined with my employer’s desire for me to take more courses, I enrolled in a couple with Udemy. The specifically titled Machine Learning A-Z: Hands-on Python &amp;amp; R in Data Science paired with Deep Learning A-Z: Hands-on Artificial Neural Networks for a mere £28.98 seems reasonable so off we go. The course seems logically structured and well laid out - today I spent about 3 hours on it covering data pre-processing. One thing about Python that I find frustrating is that the language and it’s many libraries change frequently, often with little backwards compatibility. This was evident when using the Sci-kit Learn library after a number of changes including a deprecated method. In fairness this didn’t take me long to Google and fix but nonetheless it is a concern. The course leads are aware of this, having changed the downloads but not updated the course videos. Engineering can often see otherwise perfectly suitable solutions become difficult to maintain due to obsolescence and this is a similar problem in software. The course also has a couple of “draw the rest of the owl” moments. Starting multiple linear regression, there is a slide that says you need to know what a p-value is and links to two actually quite unhelpful sites. Fortunately Sal Khan to the rescue and I was up to speed. There’s another on one slide that mentions 6 occasions that regression is unsuitable but doesn’t explain any of them.</summary></entry><entry><title type="html">Python List Comprehension</title><link href="http://localhost:4000/programming/2020/03/29/python-list-comprehension.html" rel="alternate" type="text/html" title="Python List Comprehension" /><published>2020-03-29T00:00:00+00:00</published><updated>2020-03-29T00:00:00+00:00</updated><id>http://localhost:4000/programming/2020/03/29/python-list-comprehension</id><content type="html" xml:base="http://localhost:4000/programming/2020/03/29/python-list-comprehension.html">&lt;p&gt;I’ve been spending time with Python recently and am beginning to really like some of the language’s features. List comprehension (listcomp) creates a list by evaluating an expression on each item in a given list, from left to right.
+&lt;!-- more --&gt;
+It combines and expression and a loop:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;letter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;letter&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'example'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;97&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;109&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;112&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;108&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Apply a condition:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;letter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;letter&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'example'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;letter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;112&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;97&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;109&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;108&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;It’s useful for combining lists:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;letter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;letter&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'ab'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'12'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'a'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'a'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'b'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'b'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Pimoroni’s Rainbow Hat introduction has an example to cycle colours on the LED rainbow:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;100.0&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorsys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hsv_to_rgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;rh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rainbow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;rh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rainbow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This is a little hard to follow but we’ll break it down. Hue, Saturation and Value (HSV) represents colour using three values between 0.0 and 1.0 creating a colour “wheel” that is easy to cycle on the LED. Unfortunately the LED combines red, green and blue. The Colorsys library can convert between the two.&lt;/p&gt;
+
+&lt;p&gt;The expression is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int(c*255)&lt;/code&gt;. The loop is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;for c in colorsys.hsv_to_rgb(h, 1.0, 1.0)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;h=i/100&lt;/code&gt; is giving a range of values from 0.0 to 1.0 in 0.01 steps (we could use a list comprehension too &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[i/100 for i in range(101)]&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;So let’s look at a snapshot, where h=1.3:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorsys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hsv_to_rgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.78&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Which the list comprehension converts to:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorsys&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hsv_to_rgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;198&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Giving us the RGB value needed.&lt;/p&gt;</content><author><name>Dougie</name></author><category term="programming" /><summary type="html">I’ve been spending time with Python recently and am beginning to really like some of the language’s features. List comprehension (listcomp) creates a list by evaluating an expression on each item in a given list, from left to right. It combines and expression and a loop: &amp;gt;&amp;gt;&amp;gt; [ord(letter) for letter in 'example'] [101, 120, 97, 109, 112, 108, 101] Apply a condition: &amp;gt;&amp;gt;&amp;gt; [ord(letter) for letter in 'example' if ord(letter) &amp;lt; 112] [101, 97, 109, 108, 101] It’s useful for combining lists: &amp;gt;&amp;gt;&amp;gt; [(letter, number) for letter in 'ab' for number in '12'] [('a', '1'), ('a', '2'), ('b', '1'), ('b', '2')] Pimoroni’s Rainbow Hat introduction has an example to cycle colours on the LED rainbow: for i in range(101): h = i / 100.0 r, g, b = [int(c * 255) for c in colorsys.hsv_to_rgb(h, 1.0, 1.0)] rh.rainbow.set_all(r, g, b) rh.rainbow.show() This is a little hard to follow but we’ll break it down. Hue, Saturation and Value (HSV) represents colour using three values between 0.0 and 1.0 creating a colour “wheel” that is easy to cycle on the LED. Unfortunately the LED combines red, green and blue. The Colorsys library can convert between the two.</summary></entry><entry><title type="html">Android Development</title><link href="http://localhost:4000/programming/2020/03/28/android-development.html" rel="alternate" type="text/html" title="Android Development" /><published>2020-03-28T00:00:00+00:00</published><updated>2020-03-28T00:00:00+00:00</updated><id>http://localhost:4000/programming/2020/03/28/android-development</id><content type="html" xml:base="http://localhost:4000/programming/2020/03/28/android-development.html">&lt;p&gt;Having not developed anything in Java since finishing university, opening Android Studio seemed like looking at an alien language. While I’d love to say it all came flooding back, that wouldn’t be true. Downloading the source to my last app from GitHub really didn’t help either.
+&lt;!-- more --&gt;
+Time for another self-help guide.&lt;/p&gt;
+
+&lt;p&gt;Android uses the Model View Controller (MVC) design paradigm, where the controller is the device’s sensors and screen. The model is Java or Kotlin contained in an Activity whereas the view is defined using a Layout described in XML. An Activity is a single defined task on a single screen.&lt;/p&gt;
+
+&lt;p&gt;Android Studio generates folder structure and required skeleton files. Localisation is also simplified using string resources using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/res/values/strings.xml&lt;/code&gt;. Entries use the format &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;string name=&quot;action_settings&quot;&amp;gt;Settings&amp;lt;/string&amp;gt;&lt;/code&gt; and are accessed within layouts using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;android:text=&quot;@string/action_settings&quot; /&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;A View is the basic building block of a UI - each UI component has a View Object as it’s base class. It occupies a rectuangular space on screen and has getters/setters, an ID, size and position, focus handling and event handlers/listeners. A ViewGroup Object combines Views using a layout to form a UI. Each View is defined in the layout:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;Button
+    android:id=&quot;@+id/button&quot;
+    android:onClick=&quot;onButtonClicked&quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In the Java Activity (note the View object being passed):&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/** Called when the button is clicked */
+public void onButtonClicked(View view) {
+    ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Setting or a View property, such as a TextView’s Text:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;TextView textView = (TextView) findViewById(R.id.text_view);
+textView.setText(&quot;New  text&quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;life-cycle&quot;&gt;Life cycle&lt;/h1&gt;
+&lt;p&gt;Android apps have a life cycle and there are methods called on state change.&lt;/p&gt;</content><author><name>Dougie</name></author><category term="programming" /><summary type="html">Having not developed anything in Java since finishing university, opening Android Studio seemed like looking at an alien language. While I’d love to say it all came flooding back, that wouldn’t be true. Downloading the source to my last app from GitHub really didn’t help either. Time for another self-help guide.</summary></entry><entry><title type="html">Rainbow Hat</title><link href="http://localhost:4000/programming/2020/03/28/rainbow-hat.html" rel="alternate" type="text/html" title="Rainbow Hat" /><published>2020-03-28T00:00:00+00:00</published><updated>2020-03-28T00:00:00+00:00</updated><id>http://localhost:4000/programming/2020/03/28/rainbow-hat</id><content type="html" xml:base="http://localhost:4000/programming/2020/03/28/rainbow-hat.html">&lt;p&gt;Pimoroni’s Rainbow Hat offers a nice selection of inputs and outputs using a variety of protocols. This makes it a great way to experiment with Raspberry Pi, especially as Hardware Attached on Top (HAT) avoids the messiness of breadboards and shorting links!
+&lt;!-- more --&gt;
+Designed for Android Things, it also has a Python library and a well written getting started guide. I haven’t had a play with Android Things yet so will leave that for another day and am currently a little obsessed with Python anyway.
+Installation&lt;/p&gt;
+
+&lt;p&gt;Attaching directly to the Pi using the GPIO pins, it’s very straight forward to install (I’m using a Raspberry Pi B+ and Raspbian Stretch). There’s a nice installation guide but it’s just a single script:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl https://get.pimoroni.com/rainbowhat | bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Can’t really see anyway that Pimoroni could make it easier. If you’re wondering about it’s suitability for younger explorers I’d say you’d be fine.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-and-how-with-python&quot;&gt;What and how with Python&lt;/h2&gt;
+
+&lt;p&gt;The Python library is well documented, although not completely (notably the “star” segmented display). So what have we got to play with?&lt;/p&gt;
+&lt;h3 id=&quot;led&quot;&gt;LED&lt;/h3&gt;
+
+&lt;p&gt;LED are great so that’s where we start. I found a blog post from a chap called Tim which has a great deal of detail on the AP102 LED used but beware it’s a right rabbit hole (which I spent some time wandering around). These are controlled using the Serial Peripheral Interface (SPI). Documentation suggests the brightness can be adjusted but I couldn’t see it working.&lt;/p&gt;
+
+&lt;p&gt;I ended up spending more time messing around with different ways to use the LED that I used it’s own class but most of the methods look something like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;rainbowhat&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rainbow&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;random&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;randint&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;rainbow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;rainbow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;rainbow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Segmented&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This updates very quickly, refreshing quickly enough to scroll. As mentioned above the library documentation omits display.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;rainbowhat&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rh&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;scroll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scroll_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;show&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;letter&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scroll_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;show&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;show&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;letter&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;rh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;rh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print_str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;rh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;scroll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Merry Christmas!'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;temperature-and-pressure-sensor&quot;&gt;Temperature and pressure sensor&lt;/h3&gt;
+
+&lt;p&gt;This is a single sensor that measures both. I haven’t played much with it but it seems about right. The temperature probably needs to be compensated for against the Pi’s temperature as it seems a little higher than I’d expect for room temperature. The functions are accessed using weather.temperature() and weather.pressure().&lt;/p&gt;
+
+&lt;p&gt;There’s also an altitude function (which is derived from pressure) weather.altitude(qnh=1020). I notice the parameters are specified as a keyword argument, I need to look at the library and see if I can use QNE as well as QNH.
+Capacitive buttons&lt;/p&gt;
+
+&lt;p&gt;There’s three capacitive buttons, which are more responsive than I expected. These are accessed using a decorator (more detailed post here) and documentation mentions press and release states but I found there is also a pressed state (as in currently being pressed). I haven’t found if it’s possible to check if two or more a currently pressed and will look at that in another post.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;touch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;press&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;touch_a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;channel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# Whatever you want it to do!
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I found I wanted an event handler running as a parallel process to monitor the buttons. Concurrency in Python is interesting and I am writing a separate post about it.&lt;/p&gt;
+
+&lt;p&gt;Each has a useful corresponding LED so you can show state. These are red, green and blue and are accessed as such, for example to turn on the blue one rainbowhat.light.blue.on().
+Piezo buzzer&lt;/p&gt;
+
+&lt;p&gt;The buzzer can play midi notes by number or specific frequencies using buzzer.midi_note(number, duration=1.0) and buzzer.note(frequency, duration=1.0). I can’t imagine me using this much as I’m tone deaf so the most important method for me would be buzzer.stop.&lt;/p&gt;
+
+&lt;h2 id=&quot;thoughts&quot;&gt;Thoughts&lt;/h2&gt;
+
+&lt;p&gt;I certainly recommend this, especially if you’re getting into Python, Raspberry Pi and working with hardware.&lt;/p&gt;
+
+&lt;p&gt;HAT are a lot simpler and tidier than breadboards while still giving visual feedback. There is a good choice inputs and outputs here and the library is consistent and logical. They say that if something is Pythonic, you should be able to work out how it functions and that’s true here.&lt;/p&gt;</content><author><name>Dougie</name></author><category term="programming" /><summary type="html">Pimoroni’s Rainbow Hat offers a nice selection of inputs and outputs using a variety of protocols. This makes it a great way to experiment with Raspberry Pi, especially as Hardware Attached on Top (HAT) avoids the messiness of breadboards and shorting links! Designed for Android Things, it also has a Python library and a well written getting started guide. I haven’t had a play with Android Things yet so will leave that for another day and am currently a little obsessed with Python anyway. Installation</summary></entry><entry><title type="html">Using Threading rather than Thread</title><link href="http://localhost:4000/programming/2020/03/27/python-concurrency.html" rel="alternate" type="text/html" title="Using Threading rather than Thread" /><published>2020-03-27T00:00:00+00:00</published><updated>2020-03-27T00:00:00+00:00</updated><id>http://localhost:4000/programming/2020/03/27/python-concurrency</id><content type="html" xml:base="http://localhost:4000/programming/2020/03/27/python-concurrency.html">&lt;p&gt;In an earlier post, I used Threads but the thread module in Python when I should be using threading. The &lt;a href=&quot;https://docs.python.org/3/library/threading.html&quot;&gt;documentation&lt;/a&gt; for threading says it builds upon the thread module (renamed _thread):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This module provides low-level primitives for working with multiple threads (also called light-weight processes or tasks) — multiple threads of control sharing their global data space. For synchronization, simple locks (also called mutexes or binary semaphores) are provided. The threading module provides an easier to use and higher-level threading API built on top of this module.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;!-- more --&gt;
+&lt;p&gt;That makes sense, so I should be using the threading module. So why is there a leading underscore on thread? The &lt;a href=&quot;https://www.python.org/dev/peps/pep-0008/#id36&quot;&gt;Style Guide (PEP 8)&lt;/a&gt; says it’s a weak internal use indication and that for example modules with an underscore are not imported when using an asterisk.&lt;/p&gt;
+
+&lt;p&gt;There are two ways to use this module. Define a subclass and override the run method or to use the Thread class’s default run method. I’ll use the second method here.&lt;/p&gt;
+
+&lt;p&gt;The Python 2.x code I was using looked like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;thread&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start_new_thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scroll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The new code:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;threading&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;scroll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Example text'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;thread&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;threading&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scroll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So this isn’t that different but it is a lot more readable. The arguments are explicit and there’s no ambiguity.&lt;/p&gt;
+
+&lt;p&gt;Fluent Python (Ramalho, 2015) suggests using   concurrent.futures package with Python 3.x. ThreadPoolExecutor and ProcessPoolExecutor implement interfaces to submit threads or processes respectively for execution. I’ll expand on this in a future post as it is useful to submit multiple tasks and collect results – however that’s not what is needed in this example.&lt;/p&gt;</content><author><name>Dougie</name></author><category term="programming" /><summary type="html">In an earlier post, I used Threads but the thread module in Python when I should be using threading. The documentation for threading says it builds upon the thread module (renamed _thread): This module provides low-level primitives for working with multiple threads (also called light-weight processes or tasks) — multiple threads of control sharing their global data space. For synchronization, simple locks (also called mutexes or binary semaphores) are provided. The threading module provides an easier to use and higher-level threading API built on top of this module. That makes sense, so I should be using the threading module. So why is there a leading underscore on thread? The Style Guide (PEP 8) says it’s a weak internal use indication and that for example modules with an underscore are not imported when using an asterisk. There are two ways to use this module. Define a subclass and override the run method or to use the Thread class’s default run method. I’ll use the second method here. The Python 2.x code I was using looked like this: import thread thread.start_new_thread(scroll, (text,)) The new code: import threading def scroll(text): print(text) text = 'Example text' thread = threading.Thread(target=scroll, args=(text,)) thread.start() So this isn’t that different but it is a lot more readable. The arguments are explicit and there’s no ambiguity. Fluent Python (Ramalho, 2015) suggests using concurrent.futures package with Python 3.x. ThreadPoolExecutor and ProcessPoolExecutor implement interfaces to submit threads or processes respectively for execution. I’ll expand on this in a future post as it is useful to submit multiple tasks and collect results – however that’s not what is needed in this example.</summary></entry><entry><title type="html">Rainbow Decorators Arguments Threads</title><link href="http://localhost:4000/programming/2018/12/26/rainbow-decorators-arguments-threads.html" rel="alternate" type="text/html" title="Rainbow Decorators Arguments Threads" /><published>2018-12-26T00:00:00+00:00</published><updated>2018-12-26T00:00:00+00:00</updated><id>http://localhost:4000/programming/2018/12/26/rainbow-decorators-arguments-threads</id><content type="html" xml:base="http://localhost:4000/programming/2018/12/26/rainbow-decorators-arguments-threads.html">&lt;p&gt;Playing with Rainbow Hat I learned a few things about Python as a result I found out what a decorator is, the difference between args and kwargs and threads. I also learned that a lot of guides don’t understand either.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you can’t explain it simply, you don’t understand it well enough.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;!-- more --&gt;&lt;/p&gt;
+  &lt;h2 id=&quot;decorators&quot;&gt;Decorators&lt;/h2&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Rainbow Hat documentation says “use touch handlers either by passing in a function by name, or using the method as a decorator”.&lt;/p&gt;
+
+&lt;p&gt;Learning Python (Lutz, 2013) dedicates a chapter to decorators and sums it up rather well:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In short, decorators provide a way to insert automatically run code at the end of function and class definition statements—at the end of a def for function decorators, and at the end of a class for class decorators. &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;With similar notation to Java’s annotations:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decorator_function&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Python is running one function through another and binding the result to the original function name.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decorator_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;For example, Python has a built in function that returns a static method &lt;strong&gt;staticmethod(function)&lt;/strong&gt;. To make &lt;strong&gt;example_func&lt;/strong&gt; static, we put:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;staticmethod&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;example_func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Which is rebound to:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;staticmethod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;example_func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So now I know what a decorator is in Python, I used it for the buttons. What to use them for though? I figure that they should control speed of LED, sequence or colour. That’s going to need a thread running as an event handler.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-short-digression-on-arguments&quot;&gt;A short digression on arguments&lt;/h2&gt;
+
+&lt;p&gt;What on earth is a key-worded argument? Lots of documentation refers to *args and **kwargs but had no idea what it was. Arguments passed to functions are read left to right:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Dougie'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;But we can also use a key-value pair:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Dougie'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Apart from improving readability in the function call, default arguments can be assigned in the function definition:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Dougie'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;By convention these are referred to as arg and kwarg. Almost there – that just leaves the *. Python lets you define functions that take any number of arguments, assembling them into a tuple. If you use key-value arguments, it assembles a dictionary.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{...}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now the clever(er) bit because if you do the same on the function call, Python unpacks the argument into individual arguments (*arg) or key-value pairs (**kwarg).&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;back-to-the-main-thread&quot;&gt;Back to the main thread&lt;/h2&gt;
+
+&lt;p&gt;The Rainbow Hat has buttons so I want to use these to control rainbow speed. This seems suited to a thread running an event handler. The syntax for the thread library (hopefully explaining the digression) is:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start_new_thread&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;function_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Concurrency in Python is probably a post in its own right. The CPython interpreter bytecode isn’t fully thread safe. There are different interpretations of what that means so I’ll use the Open University definition:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A class is considered thread-safe if its instances behave under concurrent method calls as if they were called sequentially.&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Python source code is compiled to bytecode which is run in a VM as machine code. In order to ensure only one thread executes bytecode at once the current thread has to hold a global lock (Global Interpreter Lock (GIL)).&lt;/p&gt;
+
+&lt;p&gt;This means multiple processor cores aren’t being used. In this application it doesn’t matter because the interpreter emulates concurrency by routinely switching threads.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Albert Einstein &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Learning Python (Lutz, 2013), pp1034 “Chapter 32: Advanced Class Topics” &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;M362 Developing concurrent distributed systems (THE OU, 2008) &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Dougie</name></author><category term="programming" /><summary type="html">Playing with Rainbow Hat I learned a few things about Python as a result I found out what a decorator is, the difference between args and kwargs and threads. I also learned that a lot of guides don’t understand either.</summary></entry><entry><title type="html">Passwordless Ssh</title><link href="http://localhost:4000/programming/2018/12/22/passwordless-ssh.html" rel="alternate" type="text/html" title="Passwordless Ssh" /><published>2018-12-22T00:00:00+00:00</published><updated>2018-12-22T00:00:00+00:00</updated><id>http://localhost:4000/programming/2018/12/22/passwordless-ssh</id><content type="html" xml:base="http://localhost:4000/programming/2018/12/22/passwordless-ssh.html">&lt;p&gt;Passwordless SSH access is convenient, especially as everything is on my local network. I only really access the Pi remotely and you can configure it to use RSA keys. I’m on Ubuntu Linux so open a terminal and create an RSA key (if you don’t have one):&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen -t rsa
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;You’ll need to upload it to the Pi:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-copy-id username@ip_address
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now because I can’t be bothered to remember IP addresses, I added a line to /etc/hosts:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ip_address     raspi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That means that I need to add a more specific entry to the ~/.ssh/known_hosts file to allow for the IP address and name:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keyscan -Ht rsa raspi,ip_address &amp;gt;&amp;gt; ~/.ssh/known_hosts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You’ll be asked for a password to unlock the keyring in Ubuntu when you first login but otherwise that’s you with passwordless ssh! You’ll need a static IP address. I couldn’t be bothered messing about with it personally so left the Pi using Dynamic IP allocation and set my router to always give the same address.&lt;/p&gt;</content><author><name>Dougie</name></author><category term="programming" /><summary type="html">Passwordless SSH access is convenient, especially as everything is on my local network. I only really access the Pi remotely and you can configure it to use RSA keys. I’m on Ubuntu Linux so open a terminal and create an RSA key (if you don’t have one): ssh-keygen -t rsa You’ll need to upload it to the Pi: ssh-copy-id username@ip_address</summary></entry><entry><title type="html">Euler 19</title><link href="http://localhost:4000/euler/2018/07/06/euler-19.html" rel="alternate" type="text/html" title="Euler 19" /><published>2018-07-06T00:00:00+01:00</published><updated>2018-07-06T00:00:00+01:00</updated><id>http://localhost:4000/euler/2018/07/06/euler-19</id><content type="html" xml:base="http://localhost:4000/euler/2018/07/06/euler-19.html">&lt;p&gt;Project Euler again, problem 19. How many Sundays fell on the first of the month in the twentieth century?&lt;/p&gt;
+
+&lt;p&gt;Brute force solution in R but it let me play around with the way R handles dates. Seems more straight forward than in many languages (looking at you Java).&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a.date &amp;lt;- as.Date(&quot;1901/01/01&quot;)
+end.date &amp;lt;- as.Date(&quot;2000/12/31&quot;)
+count &amp;lt;- 0
+while (a.date &amp;lt;= end.date) {
+  if (format(a.date, &quot;%d&quot;) == &quot;01&quot;) {
+    if (format(a.date, &quot;%A&quot;) == &quot;Sunday&quot;) {
+      count = count + 1
+    }
+  }
+  a.date = a.date + 1
+}
+print(count)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Used a for loop initially but found that it wouldn’t iterate Date types. Could probably look into that in the future.&lt;/p&gt;</content><author><name>Dougie</name></author><category term="euler" /><summary type="html">Project Euler again, problem 19. How many Sundays fell on the first of the month in the twentieth century?</summary></entry><entry><title type="html">Euler 25</title><link href="http://localhost:4000/euler/2018/07/05/euler-25.html" rel="alternate" type="text/html" title="Euler 25" /><published>2018-07-05T00:00:00+01:00</published><updated>2018-07-05T00:00:00+01:00</updated><id>http://localhost:4000/euler/2018/07/05/euler-25</id><content type="html" xml:base="http://localhost:4000/euler/2018/07/05/euler-25.html">&lt;p&gt;Project Euler problem 25 is to find the index of the first Fibonacci number of 1000 characters. I used the gmp library – I couldn’t find a way to get the length of a bigz data type so converted it to a string:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gmp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;digits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;digits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;character&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fibnum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;digits&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nchar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The gmp fibnum function is quick.&lt;/p&gt;</content><author><name>Dougie</name></author><category term="euler" /><summary type="html">Project Euler problem 25 is to find the index of the first Fibonacci number of 1000 characters. I used the gmp library – I couldn’t find a way to get the length of a bigz data type so converted it to a string: ```python library(gmp)</summary></entry></feed>
