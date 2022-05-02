@@ -3,9 +3,12 @@
 
 <iframe src="https://discord.com/widget?id=970648245426593852&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"> </iframe>
 
-<a href="(https://www.scottishtecharmy.org/)">
-  <img height="75" align="right" alt="STA" src="https://images.squarespace-cdn.com/content/v1/5e98651eeb6c5049f0d0cad4/1587375053728-HH7PUTT23XUHJVNJGHRL/Long+Format.png?format=1500w"/>
-</a>
+<script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+    new Crate({
+        server: '970648245426593852', // DougieWougie GitHub
+        channel: '970648245879582782' // #general
+    })
+</script>
 
 Hi I’m [Dougie](https://blog.dougiewougie.com) (Dʊ-gie), an analyst from Scotland󠁧󠁢󠁳󠁣󠁴󠁿.  Focussed on App Development and Deployment, I'm helping as a volunteer with [Scottish Tech Army](https://www.scottishtecharmy.org/).
 
