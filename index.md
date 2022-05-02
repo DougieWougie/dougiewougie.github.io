@@ -1,6 +1,8 @@
 [![Twitter: DougieWougie](https://img.shields.io/twitter/follow/DougieWougie?logo=twitter&style=for-the-badge)](https://twitter.com/DougieWougie)
 [![Discord: DougieWougie](https://img.shields.io/discord/970648245426593852?logo=discord&style=for-the-badge)](https://discord.com/widget?id=970648245426593852&theme=dark)
 
+<iframe src="https://discord.com/widget?id=970648245426593852&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
 <a href="(https://www.scottishtecharmy.org/)">
   <img height="75" align="right" alt="STA" src="https://images.squarespace-cdn.com/content/v1/5e98651eeb6c5049f0d0cad4/1587375053728-HH7PUTT23XUHJVNJGHRL/Long+Format.png?format=1500w"/>
 </a>
