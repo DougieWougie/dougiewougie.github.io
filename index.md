@@ -1,7 +1,7 @@
 [![Twitter: DougieWougie](https://img.shields.io/twitter/follow/DougieWougie?logo=twitter&style=for-the-badge)](https://twitter.com/DougieWougie)
 [![Discord: DougieWougie](https://img.shields.io/discord/970648245426593852?logo=discord&style=for-the-badge)](https://discord.com/widget?id=970648245426593852&theme=dark)
 
-Hi I’m [Dougie](https://blog.dougiewougie.com) (Dʊ-gie), an analyst from Scotland󠁧󠁢󠁳󠁣󠁴󠁿.  Focussed on App Development and Deployment, I'm helping as a volunteer with [Scottish Tech Army](https://www.scottishtecharmy.org/).
+Hi I’m [Dougie](https://www.dougiewougie.com) (Dʊ-gie), an analyst from Scotland󠁧󠁢󠁳󠁣󠁴󠁿.  Focussed on App Development and Deployment, I'm helping as a volunteer with [Scottish Tech Army](https://www.scottishtecharmy.org/).
 
 > Get an idea of what STA does with the [Volunteers Assemble!](https://youtu.be/drFMCf0ZXJ0) challenge from the Tech for Good Summit 2022!
 
